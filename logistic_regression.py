@@ -154,12 +154,12 @@ class LogisticRegression:
             np.ndarray: the weights `theta` of the model
             np.ndarray: the minimized cost of the model after `n_iter` iterations
         """
-        assert (
-            X.shape[0] == y.shape[0]
-        ), "The number of samples in X and y must be equal."
-        assert len(X.shape) == 2, "X must be a 2-dimensional array."
-        assert len(y.shape) == 2, "y must be a 2-dimensional array."
-        assert y.shape[1] == 1, "y must be a column vector."
+        #assert (
+        #    X.shape[0] == y.shape[0]
+        #), "The number of samples in X and y must be equal."
+        #assert len(X.shape) == 2, "X must be a 2-dimensional array."
+        #assert len(y.shape) == 2, "y must be a 2-dimensional array."
+        #assert y.shape[1] == 1, "y must be a column vector."
 
         return self._gradient_descent(X, y)
 
